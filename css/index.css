@@ -1,0 +1,1208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+/* -------------------- HEADER -------------------- */
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+.mnbx {
+  margin-inline: 5vw;
+}
+
+.foodluck {
+  padding-block: 2.5vh;
+  font-size: 1.2vw;
+}
+
+.fl1 {
+  text-align: center;
+}
+
+#fl11 {
+  color: rgb(255, 159, 14);
+}
+
+#fl12 {
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  margin-left: 2.5vw;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  color: white;
+  gap: 2.4vw;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar_buttons {
+  position: relative;
+}
+
+.navbar_buttons::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  background-color: orange;
+  opacity: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.2s ease;
+}
+
+.navbar_buttons:hover::after {
+  opacity: 1;
+}
+
+.search_bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid rgb(108, 71, 15);
+  border-radius: 15px;
+  padding: 3px 0px 3px 10px;
+  margin-right: 2.5vw;
+}
+
+.search_area {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 0.95rem;
+  width: 100%;
+}
+
+.search_area::placeholder {
+  color: white;
+}
+
+.search_bar .search-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+}
+
+/* -------------------- HERO SECTION -------------------- */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.yoto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hnd {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.bhdbx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 85%;
+  height: 100%;
+  background-color: rgb(21, 18, 18, 0.96);
+  z-index: 2;
+}
+
+.container1 {
+  position: relative;
+  z-index: 10;
+  margin-inline: 5vw;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2vw;
+}
+
+.amuse {
+  color: rgb(255, 159, 14);
+  font-family: "Great Vibes", cursive;
+  font-size: 200%;
+}
+
+.spn1 {
+  color: rgb(255, 159, 14);
+}
+
+.sub1cnt1 h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 280%;
+}
+
+.sub1cnt1 {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  max-width: 472px;
+  width: 100%;
+  justify-content: center;
+}
+
+.sub1cnt1 button {
+  background-color: rgb(255, 159, 14);
+  color: white;
+  border: none;
+  width: 30%;
+  padding: 2.5%;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.sub2cnt1 {
+  flex: 1;
+}
+
+.sub2cnt1 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container2 {
+  width: 100%;
+  padding-block: 8vh;
+  color: white;
+}
+
+.container2 .container {
+  margin-inline: 5vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3vw;
+}
+
+.sub1cnt2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  max-width: 550px;
+  width: 100%;
+}
+
+.sub1cnt2 h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 280%;
+}
+
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+
+.checklist li::before {
+  content: "✔";
+  padding-inline: 10px;
+}
+
+.sub2cnt2 {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 10%;
+  min-height: 400px;
+}
+.topImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.btmImg {
+  display: flex;
+  gap: 15px;
+  flex: 1;
+}
+.btmImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+/* -------------------- FOOTER -------------------- */
+.site-footer {
+  background-color: #0a0a0a;
+  color: white;
+  padding-block: 3vh;
+  text-align: center;
+}
+.rdButton {
+  background-color: rgb(255, 159, 14);
+  color: white;
+  border: none;
+  width: 30%;
+  padding: 2.5%;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.container3 p {
+  color: rgb(255, 159, 14);
+  font-family: "Great Vibes", cursive;
+  font-size: 200%;
+}
+.container3 h2 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 280%;
+}
+.container3 {
+  margin-inline: 5vw;
+  text-align: center;
+  padding-block: 8vh;
+}
+.FdImgCnt {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1vw;
+}
+.FdImgCnt img {
+  min-width: 220px;
+  max-width: 320px;
+  border-radius: 12px;
+}
+/* ---------------------------------------------------------------------------- */
+
+.container4 {
+  width: 100%;
+  padding-block: 8vh;
+  color: white;
+}
+
+.container4 .container {
+  margin-inline: 5vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4vw;
+}
+
+/* -------------------- IMAGE GRID -------------------- */
+.foodGrid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1.4fr 1.1fr 0.9fr;
+  grid-template-rows: repeat(2, 220px);
+  gap: 15px;
+}
+
+.grid-item {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Tacos: tall, spans both rows, left column */
+.item1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+/* Burger: top middle */
+.item2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+/* Chicken tenders: bottom middle */
+.item3 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+/* Right column: stacked burger-pick + plate */
+.item4 {
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+}
+
+.stacked-top,
+.stacked-bottom {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.stacked-top img,
+.stacked-bottom img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* -------------------- TEXT CONTENT -------------------- */
+.whyCntTxt {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.whyCntTxt .amuse {
+  color: rgb(255, 159, 14);
+  font-family: "Great Vibes", cursive;
+  font-size: 200%;
+}
+
+.whyCntTxt h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 280%;
+}
+
+.whyCntTxt h2 .spn1 {
+  color: rgb(255, 159, 14);
+}
+
+/* -------------------- ICONS ROW -------------------- */
+.whyIcons {
+  display: flex;
+  gap: 2vw;
+  margin-top: 2vh;
+}
+
+.whyIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.whyIconBox {
+  width: 70px;
+  height: 70px;
+  background-color: rgb(255, 159, 14);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.whyIcon p {
+  font-size: 0.95rem;
+}
+
+/* -------------------- EXPERIENCE BOX -------------------- */
+.experienceBox {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  color: black;
+  border-left: 8px solid rgb(255, 159, 14);
+  border-radius: 6px;
+  padding: 20px 30px;
+  margin-top: 2vh;
+  max-width: 320px;
+}
+
+.experienceBox h3 {
+  font-size: 2.5rem;
+  color: rgb(255, 159, 14);
+}
+
+.experienceBox p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.experienceBox p span {
+  display: block;
+  font-weight: bold;
+  color: black;
+  font-size: 1.1rem;
+}
+.bb {
+  margin-block: 5vh;
+  width: 100%;
+  height: 35vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("/week1/images/backburger.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.sub1cnt5 {
+  height: 100%;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 2.5vw;
+  margin-inline: 5vw;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  text-align: center;
+}
+.ss {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  align-items: center;
+}
+.ss img {
+  max-width: 95px;
+}
+.Chpk {
+  color: white;
+  text-align: center;
+  margin-inline: 5vw;
+}
+.Chpk p {
+  color: rgb(255, 159, 14);
+  font-family: "Great Vibes", cursive;
+  font-size: 200%;
+  margin-block: 2vh;
+}
+.Chpk h2 {
+  margin-bottom: 2vh;
+}
+.slection_bar {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.slection_bar a {
+  text-decoration: none;
+  color: white;
+  padding-block: 1.1vh;
+}
+.slection_bar a:hover {
+  color: rgb(255, 159, 14);
+  cursor: pointer;
+}
+.menuArea {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.selMenu {
+  max-height: calc(4 * 110px); /* 4 rows visible = 8 items (2 per row) */
+  overflow-y: auto;
+  padding-top: 2.5vh;
+}
+.menuList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw 4vh;
+}
+.menuItem {
+  flex: 1 1 calc(50% - 40px);
+  display: flex;
+  flex-direction: row;
+}
+.menuList p {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  margin-block: 0.5vw;
+}
+.menuItemText {
+  margin-left: 1vw;
+}
+.menuItemText h4 {
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.menuItemText p {
+  color: #b3b3b3;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+.menuItemText .price {
+  color: rgb(255, 159, 14);
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.container5 {
+  color: white;
+  text-align: center;
+  margin-block: 12vh;
+  margin-inline: 5vw;
+}
+.chefBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 5vh;
+}
+.chefBox img {
+  max-width: 18vw;
+}
+.SeeMore {
+  background-color: transparent;
+  border: 1px solid rgb(255, 159, 14);
+  color: white;
+  width: 10%;
+  padding: 1% 1.5%;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  margin-top: 5vh;
+}
+.testimonialSection {
+  width: 100%;
+  padding-block: 8vh;
+  text-align: center;
+}
+
+.testimonialSection .amuse {
+  color: rgb(255, 159, 14);
+  font-family: "Great Vibes", cursive;
+  font-size: 200%;
+}
+
+.testimonialSection h2 {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 250%;
+  margin-bottom: 6vh;
+}
+
+/* -------------------- SLIDER WRAPPER -------------------- */
+.testimonialSlider {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  min-height: 420px; /* reserves space so layout doesn't jump between cards */
+}
+
+/* -------------------- CARD -------------------- */
+.testimonialCard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border-radius: 12px;
+  padding: 70px 40px 40px 40px; /* extra top padding makes room for the photo overlap */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease;
+}
+
+.testimonialCard.active {
+  opacity: 1;
+  visibility: visible;
+  position: relative; /* only the active card takes up real space */
+}
+
+/* -------------------- CLIENT PHOTO (fixed anchor point) -------------------- */
+.clientPhoto {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* centers it exactly on the card's top edge */
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid white;
+}
+
+.clientPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* -------------------- QUOTE ICON -------------------- */
+.quoteIcon {
+  color: rgb(255, 159, 14);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* -------------------- TEXT -------------------- */
+.testimonialText {
+  color: #555;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+/* -------------------- STARS -------------------- */
+.stars {
+  color: rgb(255, 159, 14);
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.stars .fa-regular {
+  color: #ddd;
+}
+
+/* -------------------- CLIENT INFO -------------------- */
+.clientName {
+  color: #111;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.clientRole {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* -------------------- DOTS -------------------- */
+.sliderDots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 4vh;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgb(108, 71, 15);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: rgb(255, 159, 14);
+}
+.container6 {
+  width: 100%;
+  height: 50vh;
+  background-image: url("/week1/images/cont6.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.lon {
+  line-height: 90%;
+}
+.sub1snt6 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  width: 40vw;
+  right: 10vw;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  gap: 2vh;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.pra1 {
+  font-size: 70%;
+}
+.sub1snt6 h2 {
+  font-size: 39px;
+}
+.nw {
+  color: rgb(255, 159, 14);
+  font-family: "Great Vibes", cursive;
+  font-size: 150%;
+}
+.readm {
+  background-color: transparent;
+  border: 1px solid rgb(255, 159, 14);
+  color: white;
+  width: 18%;
+  padding: 1.5% 0%;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.btmbtns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 3vw;
+}
+.playVideoBtn {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5vw;
+  align-items: center;
+  cursor: pointer;
+}
+.playIcon {
+  width: 45px;
+  height: 45px;
+  background-color: rgb(255, 159, 14);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+.playVideoBtn span {
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.container7 {
+  width: 100%;
+  padding-block: 8vh;
+  text-align: center;
+}
+
+.container7 .amuse {
+  color: rgb(255, 159, 14);
+  font-family: "Great Vibes", cursive;
+  font-size: 200%;
+}
+
+.container7 h2 {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 250%;
+  margin-bottom: 6vh;
+}
+
+.container7 h2 .spn1 {
+  color: rgb(255, 159, 14);
+}
+
+/* -------------------- CARDS ROW -------------------- */
+.blogCardsRow {
+  display: flex;
+  gap: 2vw;
+  margin-inline: 5vw;
+}
+
+.blogCard {
+  flex: 1;
+  border: 1px solid rgb(60, 60, 60);
+  border-radius: 4px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.blogImg img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.blogContent {
+  padding: 25px;
+}
+
+.blogDate {
+  color: rgb(255, 159, 14);
+  font-size: 0.9rem;
+}
+
+.blogContent h4 {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  margin-block: 15px;
+}
+
+/* -------------------- FOOTER: Learn More + Icons -------------------- */
+.blogFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.learnMore {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.blogIcons {
+  display: flex;
+  gap: 15px;
+  color: white;
+  font-size: 0.95rem;
+}
+
+.blogIcons .fa-comment {
+  color: rgb(255, 159, 14);
+}
+.container8 {
+  display: flex;
+  flex-direction: row;
+  margin-inline: 5vw;
+  color: white;
+  justify-content: space-between;
+  padding-inline: 4vw;
+  align-items: center;
+  font-size: 160%;
+}
+.sub1cnt8 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+}
+.sub1cnt8 p {
+  color: rgb(132, 132, 132);
+  font-family: "Inter", sans-serif;
+  font-size: 60%;
+}
+.sub2cnt8 {
+  background-color: rgb(255, 159, 14);
+  color: white;
+  font-size: 80%;
+  border-radius: 5px;
+}
+.mal {
+  background-color: rgb(255, 159, 14);
+  color: white;
+  font-size: 80%;
+  border: none;
+  padding: 0.5vw 0vw 0.5vw 0.5vw;
+  border-radius: 5px;
+}
+.sub {
+  background-color: white;
+  color: rgb(255, 159, 14);
+  font-size: 70%;
+  border: none;
+  padding: 0.6vw 0.5vw 0.6vw 0.5vw;
+  border-radius: 5px;
+}
+/* ------------------------------- */
+/* -------------------- SUPPORT SECTION (existing) -------------------- */
+.container8 {
+  margin-inline: 5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 6vh;
+  color: white;
+  flex-wrap: wrap;
+  gap: 3vh;
+}
+
+.sub1cnt8 h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+}
+
+.sub1cnt8 h3 .spn1 {
+  color: rgb(255, 159, 14);
+}
+
+.sub1cnt8 p {
+  color: #aaa;
+  margin-top: 5px;
+}
+
+.sub2cnt8 form {
+  display: flex;
+}
+
+.sub2cnt8 .mal {
+  background-color: rgb(255, 159, 14);
+  border: none;
+  outline: none;
+  padding: 16px 20px;
+  color: white;
+  font-size: 0.95rem;
+  width: 300px;
+}
+
+.sub2cnt8 .mal::placeholder {
+  color: white;
+}
+
+.sub2cnt8 .sub {
+  background-color: white;
+  border: none;
+  padding: 16px 24px;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* -------------------- DIVIDER LINE -------------------- */
+.footerDivider {
+  height: 1px;
+  background-color: rgb(255, 159, 14);
+  margin-inline: 5vw;
+}
+
+/* -------------------- FOOTER COLUMNS -------------------- */
+.mainFooter {
+  padding-top: 6vh;
+}
+
+.footerColumns {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 5vw;
+  gap: 3vw;
+  padding-bottom: 6vh;
+}
+
+.footerCol {
+  flex: 1;
+  color: white;
+}
+
+.footerCol h4 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.footerCol p {
+  color: #999;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.footerCol ul {
+  list-style: none;
+}
+
+.footerCol ul li {
+  margin-bottom: 15px;
+}
+
+.footerCol ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.footerCol ul li a:hover {
+  color: rgb(255, 159, 14);
+}
+
+/* -------------------- OPENING HOURS -------------------- */
+.openingHours {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.clockIcon {
+  width: 45px;
+  height: 45px;
+  background-color: rgb(255, 159, 14);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.hoursTitle {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.hoursText p {
+  color: #999;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* -------------------- RECENT POSTS -------------------- */
+.recentPost {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.recentPost img {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.postDate {
+  color: #888;
+  font-size: 0.8rem;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.recentPostText p {
+  color: white;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* -------------------- FOOTER BOTTOM BAR -------------------- */
+.footerBottom {
+  background-color: rgb(255, 159, 14);
+  padding: 20px 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerBottom p {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 12px;
+}
+
+.socialIcons a {
+  width: 36px;
+  height: 36px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.socialIcons a:hover {
+  background-color: white;
+  color: rgb(255, 159, 14);
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+@media (max-width: 900px) {
+  .footerColumns {
+    flex-wrap: wrap;
+  }
+
+  .footerCol {
+    flex: 1 1 45%;
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
+/* -------------------- RESPONSIVE -------------------- */
+@media (max-width: 900px) {
+  .blogCardsRow {
+    flex-direction: column;
+  }
+}
+/* -------- */
+
+/* -------------------- RESPONSIVE -------------------- */
+@media (max-width: 600px) {
+  .testimonialSlider {
+    margin-inline: 5vw;
+  }
+
+  .testimonialCard {
+    padding: 60px 20px 30px 20px;
+  }
+
+  .testimonialText {
+    font-size: 0.9rem;
+  }
+}
